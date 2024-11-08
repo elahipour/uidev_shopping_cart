@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping cart</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/beffa0ce68.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>سبد خرید</h1>
+    </header>
+ 
+    <div class="right">
+        <div class="shopping-card">
+            <div class="product">
+                <div class="back-img">
+                    <img src="./IMG/adidas.avif" alt="addidas">
+                </div>
+                <div class="product__name">
+                    <h3>adidas
+                    </h3>
+                    <p class="price"> <strong id="adidass_price">2250000 تومان</strong> <sub>2750000</sub> </p>
+                </div>
+                <div class="quantity">
+                    <div class="quantity_counter">
+                        <button class="dec" id="dec-adidass"><i class=" fa-solid fa-minus"></i></button>
+                        <p id="adidass_quantity">0</p>
+                        <button class="inc" id="inc-adidass"><i class=" fa-solid fa-plus"></i></button>
+
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="btn btn-danger">حذف</button>
+                    </div>
+                    <div class="product_total">
+                        <p>مجموع خرید: <span id="spans">0</span> تومان</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="back-img">
+                    <img src="./IMG/nike.png" alt="addidas">
+                </div>
+                <div class="product__name">
+                    <h3>nike</h3>
+                    <p class="price"> <strong id="nike_price">2700000 تومان</strong> <sub>3100000</sub> </p>
+                </div>
+                <div class="quantity">
+                    <div class="quantity_counter">
+
+                        <button class="dec" id="dec-nike"><i class="  fa-solid fa-minus"></i></button>
+                        <p id="nike_quantity">0</p>
+                        <button class="inc" id="inc-nike"><i class=" fa-solid fa-plus"></i></button>
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="btn btn-danger">حذف</button>
+                    </div>
+                    <div class="product_total">
+                        <p>مجموع خرید: <span id="spans">0 </span> تومان</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="back-img">
+                    <img src="./IMG/ase.jpg" alt="addidas">
+                </div>
+                <div class="product__name">
+                    <h3>ASE</h3>
+                    <p class="price"> <strong id="AES_price">3450000 تومان</strong> <sub>3900000</sub> </p>
+                </div>
+                <div class="quantity">
+                    <div class="quantity_counter">
+
+                        <button class="dec" id="dec-ASE"><i class=" fa-solid fa-minus"></i></button>
+                        <p id="AES_quantity">0</p>
+                        <button class="inc" id="inc-ASE"><i class=" fa-solid fa-plus"></i></button>
+
+                    </div>
+                    <div class="remove-btn">
+                        <button type="button" class="  btn btn-danger">حذف</button>
+                    </div>
+                    <div class="product_total">
+                        <p>مجموع خرید: <span id="spans">0 </span> تومان</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="total">
+
+                <div class="total_sub ">
+                    <p>جمع کل</p>
+                    <p id="total_sub">0</p>
+                </div>
+                <div class="total_var">
+                    <p>هزینه حمل و نقل</p>
+                    <p id="total_var">250000 تومان</p>
+                </div>
+                <div class="total_before_tax">
+                    <p>مجموع قبل از اضافه شدن مالیات</p>
+                    <p id="total_before_tax">0</p>
+                </div>
+                <div class="total_tax">
+                    <p>مالیات(%9)</p>
+                    <p id="total_tax">0</p>
+                </div>
+
+           
+                <div class="total_cost">
+                    <p>قابل پرداخت</p>
+                    <p id="total_cost">0</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
