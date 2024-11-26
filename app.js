@@ -105,19 +105,19 @@ function totalPrice() {
   AES_total.innerText = Math.round(cPrice * cQuantity * 100) / 100;
   totals =
     totals + sPrice * sQuantity + bPrice * bQuantity + cPrice * cQuantity;
-  tax.innerText = (totals * 0.09).toFixed(2)  + "$ ";
-  subtotal.innerText = Math.round(totals * 100) / 100+"$ "  ;
+  tax.innerText = Math.round(totals * 0.9 * 100) / 1000 + "تومان ";
+  subtotal.innerText = Math.round(totals * 100) / 100+"تومان "  ;
 
 
   if (sQuantity > 0 || cQuantity > 0 || bQuantity > 0) {
-    shipping.innerText = "رایگان"  ;
-    // var ship = parseFloat(shipping.innerText.replace("$", ""));
-    total_before_tax.innerText = Math.round((totals) * 100) / 100+"$";
-    total.innerText = ((totals)+(totals * 0.09)).toFixed(2)+"$";
+    shipping.innerText = 250000+"تومان "  ;
+    var ship = parseFloat(shipping.innerText.replace("تومان ", ""));
+    total.innerText = Math.round((totals + ship)+(Math.round(totals * 0.9 * 100) / 1000 ))+"تومان ";
+    total_before_tax.innerText = Math.round((totals + ship) * 100) / 100+"تومان ";
     
   } else {
-    total.innerText =  0+"$" ;
-    total_before_tax.innerText = 0+"$";
+    total.innerText =  0+"تومان " ;
+    total_before_tax.innerText = 0+"تومان ";
 
   }
 }
